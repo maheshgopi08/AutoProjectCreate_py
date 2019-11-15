@@ -8,8 +8,7 @@ import os
 
 #path= "c:/users/administrator/documents/" #Defeault directory to store the differerent projects
 
-username = "maheshgopi08" #Insert your github username here
-password = "" #Insert your github password here
+
 
 
 
@@ -18,12 +17,11 @@ def create():
     print((sys.argv[1:]))
     folderName = str(sys.argv[1])
     if("py" in folderName ):    #Condition for python
-        path="c:/users/administrator/documents/python/"
+        path="C:/Users/NAVEEN/Documents/python/"
     if("fl" in folderName ):    #Condition for flutter
         path="C:/src/projects/"
-    
-    
-
+    else:
+        path="C:/Users/NAVEEN/Documents/"
     
     os.makedirs(path + str(folderName))
 
